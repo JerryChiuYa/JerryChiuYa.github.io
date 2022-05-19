@@ -1,0 +1,118 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    Layout = "";
+}
+
+<link href='https://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel="stylesheet"/>
+<style>
+   font-face{
+       font-family: "Patrick Hand SC";
+      
+   }
+
+.light{
+    display:block;
+    margin:auto;
+    border-radius:70px;
+    width:50%;
+    height:80%;
+    animation:light 2s ease-in-out;
+    animation-fill-mode:forwards;
+    animation-delay:5s;
+  
+    
+}
+.tai3{
+    object-position:0 0;
+    width:145px;
+    border-radius:40px;
+    height:170px;
+    margin:20px 0 0 20px;
+    float:left;
+    opacity:0;
+    animation:tai3 1s ease-in;
+    animation-delay:6.9s;
+    animation-fill-mode:forwards;
+
+}
+#mainFont{
+    float:inherit;
+    white-space:nowrap;
+    animation:mainFont 5s linear;
+    animation-fill-mode:forwards;
+     font-family: "Patrick Hand SC", cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 110px;
+    letter-spacing: 2px;
+    color: rgba(19, 66, 0, 0.93);
+    text-shadow: rgba(66, 0, 0, 0.52) 5px 4px 6px;
+}
+   /*動畫區塊*/
+
+
+
+@@-webkit-keyframes mainFont{
+    0%{
+        opacity:0;
+        transform:scale(1.5);
+        
+    }
+    20%{
+        opacity:1;
+    }
+    80%{
+        opacity:1;
+        transform:scale(1);
+    }
+    90%{
+        opacity:0.5;
+        transform:translateZ(-100em);
+
+    }
+    100%{
+        opacity:0;
+       transform:translateZ(-1000em);
+
+    }
+}
+
+@@-webkit-keyframes light{
+    0%{
+        opacity:1;
+    }
+
+      75%{
+        transform:translate3d(-90em,-50em,-50em) rotateZ(-2880deg) scale(0.6);
+          opacity:0.3;
+     }
+
+    100%{
+          transform:translate3d(-100em,-70em,-70em) rotateZ(-2880deg) scale(0.1);
+          opacity:0;
+    }
+}
+
+@@-webkit-keyframes tai3{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+
+</style>
+
+<div style="margin:10px 0 0 10px; perspective:1000px">
+    <img src="~/Images/tai3.jpg" class="tai3"/>
+    <div  id="mainFont" >Welcome to my page</div>
+</div>
+
+<div style="perspective:1000px">
+    <img src="Images/light.jpg" class="light"/>
+</div>
+
