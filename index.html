@@ -1,126 +1,77 @@
-﻿<link href='https://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel="stylesheet" />
-<link href='https://fonts.googleapis.com/css?family=Kalam' rel="stylesheet" />
-
+﻿
 <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <!DOCTYPE html>
 <html lang="zh-tw">
 <head>
     <meta charset="utf-8" http-equiv="Content-Type" content="text/html" />
     <style>
-        font-face {
-            font-family: "Patrick Hand SC";
-        }
-
-        .light {
-            display: block;
-            margin: auto;
-            border-radius: 70px;
-            width: 90%;
-            height: 60%;
-            animation: light 2s ease-in-out;
-            animation-fill-mode: forwards;
-            animation-delay: 5s;
-        }
 
         .tai3 {
-            position: absolute;
-            left: 40px;
-            top: 50px;
             width: 145px;
             height: 170px;
             border-radius: 40px;
-            margin: 20px 0 0 20px;
-            float: left;
+           margin:5% 25% 2% 30%;
             opacity: 0;
             animation: tai3 1s ease-in;
-            animation-delay: 6.9s;
             animation-fill-mode: forwards;
         }
 
-        #mainFont {
-            float: inherit;
-            white-space: nowrap;
-            animation: mainFont 5s linear;
-            animation-fill-mode: forwards;
-            font-family: "Patrick Hand SC", cursive;
-            font-weight: bold;
-            text-align: center;
-            font-size: 110px;
-            letter-spacing: 2px;
-            color: rgba(19, 66, 0, 0.93);
-            text-shadow: rgba(66, 0, 0, 0.52) 5px 4px 6px;
-        }
+
 
         #crawler {
-            position: absolute;
-            left: 270px;
-            top: 300px;
             animation: tai3 2s ease-in;
-            animation-delay: 7.5s;
             animation-fill-mode: forwards;
             opacity: 0;
         }
 
-        #intro {
-            position:absolute;
-            left:270px;
-            top:90px;
-            width: 700px;
-            animation: tai3 2s ease-in;
-            animation-delay: 6.9s;
-            animation-fill-mode: forwards;
-            font-family: Kalam, cursive;
-            opacity: 0;
+        .leftSec {
+            background-color: #FFF3EE;
+            width: 20%;
+            height: 100%;
+            float:left;
         }
-
-
+        .leftCon {
+            text-align: center;
+            font-family: Calibri;
+            margin: 5% 12% 5% 12%;
+        }
+        .rightSec {
+            background-color: #FFFAF4;
+            width: 80%;
+            height: 100%;
+            float: right;
+        }
+        .rightCon {
+            font-family: Calibri;
+            margin: 2% 5% 2% 5%;
+        }
+        h3 {
+            color: #7B7B7B;
+        }
+        label {
+            color: #6C6C6C;
+            font-size: 40px;
+            font-family: Tahoma;
+            font-weight:500;
+            /*        letter-spacing: 1px;*/
+        }
+        hr {
+            width: 50%;
+            margin: auto;
+            border: 2px medium;
+            box-shadow: 2px 1px 2px;
+        }
+        .hr2 {
+            width: 80%;
+            margin:initial;
+            border: 2px medium;
+            box-shadow: 2px 1px 2px;
+        }
+        li{
+            font-size:20px;
+        }
         /*動畫區塊*/
-
-
-
-        @keyframes mainFont {
-            0% {
-                opacity: 0;
-                transform: scale(1.5);
-            }
-
-            20% {
-                opacity: 1;
-            }
-
-            80% {
-                opacity: 1;
-                transform: scale(1);
-            }
-
-            90% {
-                opacity: 0.5;
-                transform: translateZ(-100em);
-            }
-
-            100% {
-                opacity: 0;
-                transform: translateZ(-1000em);
-            }
-        }
-
-        @keyframes light {
-            0% {
-                opacity: 1;
-            }
-
-            75% {
-                transform: translate3d(-90em,-50em,-50em) rotateZ(-2880deg) scale(0.6);
-                opacity: 0.3;
-            }
-
-            100% {
-                transform: translate3d(-100em,-70em,-70em) rotateZ(-2880deg) scale(0.1);
-                opacity: 0;
-            }
-        }
-
         @keyframes tai3 {
             0% {
                 opacity: 0;
@@ -134,41 +85,89 @@
 
 
 </head>
-<body style="width:1000px; height:1200px;">
-
-    <div style="margin:10px 0 0 10px; perspective:1000px;">
+<body>
+    <!--左半部-->
+    <div class="leftSec">
         <img src="Images/tai3.jpg" class="tai3" />
-        <div id="mainFont">Welcome to my page</div>
-    </div>
+        <h1 style="text-align:center"><b>邱景賦</b></h1>
+        <h1 style="text-align: center"><b>Jerry Chiu</b></h1>
 
-    <div style="perspective:1000px">
-        <img src="Images/light.jpg" class="light" />
-    </div>
-
-    <div class="card" style="width: 18rem;" id="crawler">
-        <img src="Images/booking.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title"><b>Web Crawler on Booking.com</b></h5>
-            <p class="card-text">
-                Grab prices, types of rooms, facilities and so on to an Excel!
-
-            </p>
-            <a href="https://github.com/JerryChiuYa/Crawler-on-Booking" class="btn btn-primary" target="_blank">Go to my Python</a>
+        <div class="leftCon">
+            <h3>Summary</h3><hr />
+            <p></p>
+            <h5>As a new Programmer, I'm interested in Java, Python, and C#.</h5>
+            <h5>Currently I'm looking for a job about MVC and WPF.</h5>
         </div>
+
+        <div class="leftCon">
+            <h3>Contact</h3><hr />
+            <p></p>
+            <h5>Mobile:0903171739</h5>
+            <h5>Email:jerry384052@gmail.com</h5>
+        </div>
+
     </div>
 
-    <div class="card" id="intro">
-        <div class="card-header" style="background-color:aquamarine; font-size:20px;">
-            Jerry
-        </div>
-        <div class="card-body">
-            <blockquote class="blockquote mb-0">
-                <p>Hello, my name is Jerry. (Chinese name is 邱景賦)</p>
-                <p>As a new freshman in Programming, I'm interested in C#, Python and Java!</p>
+    <!--右半部-->
+    <div class="rightSec">
 
-            </blockquote>
+        <div class="rightCon">
+            <label>EDUCATION</label><hr class="hr2" />
+            <p></p>
+            <h4>National Central University (2012-2016)</h4>
+            <h5>I majored in Business Administration.</h5>
         </div>
+
+        <div class="rightCon">
+            <label>WORK EXPERIENCES</label><hr class="hr2" />
+
+            <p></p>
+            <h4><b>Wistron Corporation (October 2016- June 2018)</b></h4>
+            <ul>
+                <li>I worked as a materials planner, like Material preparation forecast, Inventory management.</li>
+                <li>The materials are compenents of computers, inclusive of mainboards, keyboards, daughters and so on.</li>
+                <li>I was specially assigned for site contact window, with Philippines, China and outsourcing.</li>
+            </ul>
+
+            <p></p>
+            <h4><b>Top Union Corporation (June 2018- November 2021)</b></h4>
+            <ul>
+                <li>I worked as a materials controll, and specially resposible for the biggest customer--Shure, which is famous for their microphones.</li>
+                <li>The materials are compenents of PCBA, inclusive of capacitance, resistance, IC and so on.</li>
+                <li>I was specially assigned for using <b>Python</b> to do the regular reports.</li>
+            </ul>
+        </div>
+
+        <div class="rightCon" >
+            <label>PORTFOLIOS</label><hr class="hr2" />
+            <p></p>
+
+                <ul>
+                    <li>Web Crawler</li>
+                </ul>
+
+            <div class="card" style="width: 15rem;" id="crawler">
+                <img src="Images/booking.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Web Crawler on Booking.com</b></h5>
+                    <p class="card-text">
+                        Grab prices, types of rooms, facilities and so on to an Excel!
+
+                    </p>
+                    <a href="https://github.com/JerryChiuYa/Crawler-on-Booking" class="btn btn-primary" target="_blank">Go to my Code</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
     </div>
+
+
+
+
+
 
 </body>
 </html>
