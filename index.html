@@ -27,19 +27,20 @@
 
         .leftSec {
             background-color: #FFF3EE;
-            width: 20%;
+            width: 25%;
             height: 100%;
             float:left;
+            position:fixed;
         }
         .leftCon {
             text-align: center;
             font-family: Calibri;
-            margin: 5% 12% 5% 12%;
+            margin: 5% 10% 5% 10%;
         }
         .rightSec {
             background-color: #FFFAF4;
-            width: 80%;
-            height: 100%;
+            width: 75%;
+            height: 160%;
             float: right;
         }
         .rightCon {
@@ -71,6 +72,11 @@
         li{
             font-size:20px;
         }
+
+        .cardCode {
+            display: inline-block;
+            margin:2%;
+        }
         /*動畫區塊*/
         @keyframes tai3 {
             0% {
@@ -96,7 +102,7 @@
             <h3>Summary</h3><hr />
             <p></p>
             <h5>As a new Programmer, I'm interested in Java, Python, and C#.</h5>
-            <h5>Currently I'm looking for a job about MVC and WPF.</h5>
+            <h5>Currently I'm looking for a job about .NET Core MVC and WPF.</h5>
         </div>
 
         <div class="leftCon">
@@ -124,45 +130,66 @@
             <p></p>
             <h4><b>Wistron Corporation (October 2016- June 2018)</b></h4>
             <ul>
-                <li>I worked as a materials planner, like Material preparation forecast, Inventory management.</li>
+                <li>Materials planner, like Material preparation forecast, Inventory management.</li>
                 <li>The materials are compenents of computers, inclusive of mainboards, keyboards, daughters and so on.</li>
-                <li>I was specially assigned for site contact window, with Philippines, China and outsourcing.</li>
+                <li>Specially assigned for site contact window, with Philippines, China and outsourcing.</li>
             </ul>
 
             <p></p>
             <h4><b>Top Union Corporation (June 2018- November 2021)</b></h4>
             <ul>
-                <li>I worked as a materials controll, and specially resposible for the biggest customer--Shure, which is famous for their microphones.</li>
+                <li>Materials controll, and specially resposible for the biggest customer-Shure, which is famous for their microphones.</li>
                 <li>The materials are compenents of PCBA, inclusive of capacitance, resistance, IC and so on.</li>
-                <li>I was specially assigned for using <b>Python</b> to do the regular reports.</li>
+                <li>Specially assigned for using <b>Python</b> to do the regular reports.</li>
             </ul>
         </div>
 
-        <div class="rightCon" >
+        <div class="rightCon">
             <label>PORTFOLIOS</label><hr class="hr2" />
             <p></p>
 
+            <div class="cardCode">
+                <ul>
+                    <li>Simulate Internet Banking</li>
+                </ul>
+
+                <div class="card" style="width: 16rem;" id="crawler">
+                    <img src="Images/Home.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>JlizBank by using MVC</b></h5>
+                        <p class="card-text">
+                            This is a simulate internet banking, where you can register, login, transfer money, see  balance and transaction histories.
+                        </p>
+                        <a href="https://github.com/JerryChiuYa/JlizBankMvc" class="btn btn-primary" target="_blank">Go to my Code</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cardCode">
                 <ul>
                     <li>Web Crawler</li>
                 </ul>
 
-            <div class="card" style="width: 15rem;" id="crawler">
-                <img src="Images/booking.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Web Crawler on Booking.com</b></h5>
-                    <p class="card-text">
-                        Grab prices, types of rooms, facilities and so on to an Excel!
+                <div class="card" style="width: 16rem;" id="crawler">
+                    <img src="Images/booking.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Web Crawler on Booking.com by using Python</b></h5>
+                        <p class="card-text">
+                            Grab prices, types of rooms, facilities and so on to an Excel!
 
-                    </p>
-                    <a href="https://github.com/JerryChiuYa/Crawler-on-Booking" class="btn btn-primary" target="_blank">Go to my Code</a>
+                        </p>
+                        <a href="https://github.com/JerryChiuYa/Crawler-on-Booking" class="btn btn-primary" target="_blank">Go to my Code</a>
+                    </div>
                 </div>
             </div>
 
         </div>
 
+      
 
+        </div>
 
-    </div>
 
 
 
