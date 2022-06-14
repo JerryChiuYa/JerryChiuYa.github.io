@@ -17,20 +17,28 @@
             animation-fill-mode: forwards;
         }
 
-
-
-        #crawler {
+        .card {
             animation: tai3 2s ease-in;
             animation-fill-mode: forwards;
+            margin-left:6%;
             opacity: 0;
+            width: 17rem;
         }
 
+        .cardCode {
+            display: inline-block;
+            margin: 2%;
+        }
+
+        .card-img-top{
+            height:150px;
+        }
         .leftSec {
             background-color: #FFF3EE;
             width: 25%;
             height: 100%;
-            float:left;
-            position:fixed;
+            float: left;
+            position: fixed;
         }
         .leftCon {
             text-align: center;
@@ -46,6 +54,11 @@
         .rightCon {
             font-family: Calibri;
             margin: 2% 5% 2% 5%;
+        }
+        .ul_card{
+            vertical-align:central;
+            font-weight:600;
+            font-size:larger;
         }
         h3 {
             color: #7B7B7B;
@@ -73,10 +86,7 @@
             font-size:20px;
         }
 
-        .cardCode {
-            display: inline-block;
-            margin:2%;
-        }
+   
         /*動畫區塊*/
         @keyframes tai3 {
             0% {
@@ -154,11 +164,11 @@
             <p></p>
 
             <div class="cardCode">
-                <ul>
+                <ul class="ul_card">
                     <li>Simulate Internet Banking</li>
                 </ul>
 
-                <div class="card" style="width: 16rem;" id="crawler">
+                <div class="card">
                     <img src="Images/Home.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><b>JlizBank by using MVC</b></h5>
@@ -172,11 +182,11 @@
 
 
             <div class="cardCode">
-                <ul>
+                <ul class="ul_card">
                     <li>Web Crawler</li>
                 </ul>
 
-                <div class="card" style="width: 16rem;" id="crawler">
+                <div class="card">
                     <img src="Images/booking.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><b>Web Crawler on Booking.com by using Python</b></h5>
@@ -189,11 +199,29 @@
                 </div>
             </div>
 
+            <div class="cardCode">
+                <ul class="ul_card">
+                    <li>Simulate Internet Banking App</li>
+                </ul>
+
+                <div class="card">
+                    <img src="Images/Welcome.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>JlizBank App by using WPF</b></h5>
+                        <p class="card-text">
+                            This is a simulate internet banking App, where you can register, login, transfer money, see  balance and transaction histories.
+
+                        </p>
+                        <a href="https://github.com/JerryChiuYa/WPFJlizBank" class="btn btn-primary" target="_blank">Go to my Code</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-      
+        <p style="margin-left:10%;"><b>Or you can click here to see <a href="https://github.com/JerryChiuYa?tab=repositories">My Github's repositories</a>.</b></p>
 
-        </div>
+    </div>
 
 
 
